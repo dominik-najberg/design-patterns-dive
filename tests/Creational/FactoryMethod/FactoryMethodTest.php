@@ -9,7 +9,7 @@ use App\Creational\FactoryMethod\AsianCatastrophy;
 use App\Creational\FactoryMethod\OntarioCatastrophy;
 use App\Creational\FactoryMethod\SiameseCat;
 use App\Creational\FactoryMethod\SphynxCat;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class FactoryMethodTest extends TestCase
 {

@@ -9,7 +9,7 @@ use App\Creational\Builder\BusTicketBuilder;
 use App\Creational\Builder\Director;
 use App\Creational\Builder\Parts\AirplaneTicket;
 use App\Creational\Builder\Parts\BusTicket;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class DirectorTest extends TestCase
 {

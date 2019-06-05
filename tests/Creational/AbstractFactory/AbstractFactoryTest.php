@@ -7,7 +7,7 @@ namespace App\Tests\Creational\AbstractFactory;
 use App\Creational\AbstractFactory\AdultHuman;
 use App\Creational\AbstractFactory\HumanFactory;
 use App\Creational\AbstractFactory\YoungHuman;
-use Symfony\Bundle\FrameworkBundle\Tests\TestCase;
+use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
