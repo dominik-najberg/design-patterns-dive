@@ -4,8 +4,6 @@
 namespace App\Behavioral\Strategy;
 
 
-use ArithmeticError;
-
 final class Calculator
 {
     /** @var StrategyInterface */
