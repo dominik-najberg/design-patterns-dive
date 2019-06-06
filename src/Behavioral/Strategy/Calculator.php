@@ -25,7 +25,7 @@ final class Calculator
                 $this->setStrategy(new DivisionOperation());
                 break;
             default:
-                $this->setStrategy(new AdditionOperation());
+                throw new \ArithmeticError('Operation unsupported');
         }
 
         return $this->strategy->doCalculate($x, $y);
