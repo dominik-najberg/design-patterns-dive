@@ -14,14 +14,26 @@ class StrategyTest extends TestCase
     const MATH_MULTIPLICATION = '*';
     const MATH_DIVISION = '/';
 
+    /** @var Calculator */
+    private $calculator;
+
+    protected function setUp()
+    {
+        $this->calculator = new Calculator();
+    }
+
     /**
      * @dataProvider calculationsDataProvider
      */
     public function testCalculatorWorks($x, $operation, $y, $expected)
     {
-        $calculator = new Calculator();
+        $this->assertEquals($expected, $this->calculator->calculate($x, $operation, $y));
+    }
 
-        $this->assertEquals($expected, $calculator->calculate($x, $operation, $y));
+    public function testThrowsArithmeticExceptionWhenOperationUnsupported()
+    {
+        $this->expectException(\ArithmeticError::class);
+        $this->calculator->calculate(2, 'fail', 4);
     }
 
     public function calculationsDataProvider()
