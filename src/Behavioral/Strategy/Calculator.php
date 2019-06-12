@@ -8,33 +8,20 @@ use ArithmeticError;
 
 final class Calculator
 {
-    /** @var StrategyInterface */
-    private $strategy;
+    /** @var StrategyInterface[] */
+    private $strategies;
 
     public function calculate($x, $operation, $y)
     {
-        switch ($operation) {
-            case '+':
-                $this->setStrategy(new AdditionOperation());
-                break;
-            case '-':
-                $this->setStrategy(new SubtractionOperation());
-                break;
-            case '*':
-                $this->setStrategy(new MultiplicationOperation());
-                break;
-            case '/':
-                $this->setStrategy(new DivisionOperation());
-                break;
-            default:
+        if (!isset($this->strategies[$operation])) {
                 throw new ArithmeticError('Operation unsupported');
         }
 
-        return $this->strategy->doCalculate($x, $y);
+        return $this->strategies[$operation]->doCalculate($x, $y);
     }
 
-    public function setStrategy(StrategyInterface $strategy): void
+    public function addStrategy(StrategyInterface $strategy): void
     {
-        $this->strategy = $strategy;
+        $this->strategies[$strategy->getName()] = $strategy;
     }
 }

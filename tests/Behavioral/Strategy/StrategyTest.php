@@ -5,6 +5,7 @@ namespace App\Tests\Behavioral\Strategy;
 
 
 use App\Behavioral\Strategy\Calculator;
+use App\Behavioral\Strategy\CalculatorStaticFactory;
 use PHPUnit\Framework\TestCase;
 
 class StrategyTest extends TestCase
@@ -19,7 +20,7 @@ class StrategyTest extends TestCase
 
     protected function setUp()
     {
-        $this->calculator = new Calculator();
+        $this->calculator = CalculatorStaticFactory::create();
     }
 
     /**
