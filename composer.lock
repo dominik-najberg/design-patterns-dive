@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-      "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-  "content-hash": "ea5d1b9408e9cf01a21805ff09099e17",
+    "content-hash": "ea5d1b9408e9cf01a21805ff09099e17",
     "packages": [
         {
             "name": "psr/cache",
@@ -1583,28 +1583,28 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v4.3.0",
+            "version": "v4.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "2b7c857d553423b2317ac0741fb2581d9bfd8fb7"
+                "reference": "1a76a943f2af334da13bc9f33f49392fa530eec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/2b7c857d553423b2317ac0741fb2581d9bfd8fb7",
-                "reference": "2b7c857d553423b2317ac0741fb2581d9bfd8fb7",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/1a76a943f2af334da13bc9f33f49392fa530eec9",
+                "reference": "1a76a943f2af334da13bc9f33f49392fa530eec9",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1.3"
             },
             "require-dev": {
-                "symfony/var-dumper": "^4.1.1"
+                "symfony/var-dumper": "^4.1.1|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3-dev"
+                    "dev-master": "4.4-dev"
                 }
             },
             "autoload": {
@@ -1639,7 +1639,7 @@
                 "instantiate",
                 "serialize"
             ],
-            "time": "2019-04-10T19:42:49+00:00"
+            "time": "2020-01-04T13:00:46+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -1701,73 +1701,73 @@
             "time": "2019-04-06T14:04:46+00:00"
         }
     ],
-  "packages-dev": [
-    {
-      "name": "symfony/phpunit-bridge",
-      "version": "v4.3.0",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/symfony/phpunit-bridge.git",
-        "reference": "7bfc1b57d1ac9513703391498aa8da4764388bc6"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/7bfc1b57d1ac9513703391498aa8da4764388bc6",
-        "reference": "7bfc1b57d1ac9513703391498aa8da4764388bc6",
-        "shasum": ""
-      },
-      "require": {
-        "php": ">=5.5.9"
-      },
-      "conflict": {
-        "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
-      },
-      "suggest": {
-        "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
-      },
-      "bin": [
-        "bin/simple-phpunit"
-      ],
-      "type": "symfony-bridge",
-      "extra": {
-        "branch-alias": {
-          "dev-master": "4.3-dev"
-        },
-        "thanks": {
-          "name": "phpunit/phpunit",
-          "url": "https://github.com/sebastianbergmann/phpunit"
-        }
-      },
-      "autoload": {
-        "files": [
-          "bootstrap.php"
-        ],
-        "psr-4": {
-          "Symfony\\Bridge\\PhpUnit\\": ""
-        },
-        "exclude-from-classmap": [
-          "/Tests/"
-        ]
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
+    "packages-dev": [
         {
-          "name": "Nicolas Grekas",
-          "email": "p@tchwork.com"
-        },
-        {
-          "name": "Symfony Community",
-          "homepage": "https://symfony.com/contributors"
+            "name": "symfony/phpunit-bridge",
+            "version": "v4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/phpunit-bridge.git",
+                "reference": "7bfc1b57d1ac9513703391498aa8da4764388bc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/7bfc1b57d1ac9513703391498aa8da4764388bc6",
+                "reference": "7bfc1b57d1ac9513703391498aa8da4764388bc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+            },
+            "suggest": {
+                "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
+            },
+            "bin": [
+                "bin/simple-phpunit"
+            ],
+            "type": "symfony-bridge",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                },
+                "thanks": {
+                    "name": "phpunit/phpunit",
+                    "url": "https://github.com/sebastianbergmann/phpunit"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Bridge\\PhpUnit\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony PHPUnit Bridge",
+            "homepage": "https://symfony.com",
+            "time": "2019-05-08T13:47:25+00:00"
         }
-      ],
-      "description": "Symfony PHPUnit Bridge",
-      "homepage": "https://symfony.com",
-      "time": "2019-05-08T13:47:25+00:00"
-    }
-  ],
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
