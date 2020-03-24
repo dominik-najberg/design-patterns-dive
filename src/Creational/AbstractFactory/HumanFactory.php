@@ -6,7 +6,7 @@ namespace App\Creational\AbstractFactory;
 
 class HumanFactory
 {
-    const ADULT_AGE = 21;
+    public const ADULT_AGE = 21;
 
     public function createYoungHuman(): YoungHuman
     {
