@@ -13,7 +13,7 @@ class AdultHuman implements HumanInterface
         $this->age = $age;
     }
 
-    public function sayHello()
+    public function sayHello(): string
     {
         return 'Blah. Blah. Blah.';
     }

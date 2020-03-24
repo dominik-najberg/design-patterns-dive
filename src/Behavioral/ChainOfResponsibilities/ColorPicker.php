@@ -6,9 +6,9 @@ namespace App\Behavioral\ChainOfResponsibilities;
 
 class ColorPicker
 {
-    const RED = 'red';
-    const GREEN = 'green';
-    const BLUE = 'blue';
+    public const RED = 'red';
+    public const GREEN = 'green';
+    public const BLUE = 'blue';
 
     private $selectedColor;
 

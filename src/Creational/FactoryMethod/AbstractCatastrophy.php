@@ -6,7 +6,7 @@ namespace App\Creational\FactoryMethod;
 
 abstract class AbstractCatastrophy
 {
-    public function breedAndGo()
+    public function breedAndGo(): string
     {
         $cat = $this->breedCat();
 

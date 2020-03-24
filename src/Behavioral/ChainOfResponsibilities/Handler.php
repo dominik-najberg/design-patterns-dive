@@ -5,9 +5,9 @@ namespace App\Behavioral\ChainOfResponsibilities;
 abstract class Handler
 {
     /** @var Handler|null */
-    private $nextHandler = null;
+    private $nextHandler;
 
-    public function setNext(Handler $handler)
+    public function setNext(Handler $handler): self
     {
         $this->nextHandler = $handler;
 
@@ -18,10 +18,8 @@ abstract class Handler
     {
         $processed = $this->processing($colorPicker);
 
-        if (null === $processed) {
-            if (null !== $this->nextHandler) {
+        if (null === $processed && null !== $this->nextHandler) {
                 $processed = $this->nextHandler->handle($colorPicker);
-            }
         }
 
         return $processed;

@@ -8,6 +8,6 @@ class MenuItem extends Component
 {
     public function execute(): string
     {
-        return "Leaf";
+        return 'Leaf';
     }
 }

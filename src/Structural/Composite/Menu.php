@@ -40,6 +40,6 @@ class Menu extends Component
             $results[] = $child->execute();
         }
 
-        return "Branch(" . implode("+", $results) . ")";
+        return 'Branch(' . implode('+', $results) . ')';
     }
 }

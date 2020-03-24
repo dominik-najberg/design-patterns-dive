@@ -14,32 +14,32 @@ class AirplaneTicketBuilder implements BuilderInterface
     /** @var BusTicket */
     private $ticket;
 
-    public function createTicket()
+    public function createTicket(): void
     {
         $this->ticket = new AirplaneTicket();
     }
 
-    public function addTransport()
+    public function addTransport(): void
     {
         $this->ticket->setCharacteristic('transport', new Characteristic('transport', 'flight'));
     }
 
-    public function addTransportNumber()
+    public function addTransportNumber(): void
     {
         $this->ticket->setCharacteristic('transportNumber', new Characteristic('transportNumber', '1253'));
     }
 
-    public function addSeatNumber()
+    public function addSeatNumber(): void
     {
         $this->ticket->setCharacteristic('seatNumber', new Characteristic('seatNumber', '17C'));
     }
 
-    public function addGate()
+    public function addGate(): void
     {
         $this->ticket->setCharacteristic('gate', new Characteristic('gate', '10'));
     }
 
-    public function addBaggageInstructions()
+    public function addBaggageInstructions(): void
     {
         $this->ticket->setCharacteristic('baggage', new Characteristic('baggage', 'drop at the gate'));
     }

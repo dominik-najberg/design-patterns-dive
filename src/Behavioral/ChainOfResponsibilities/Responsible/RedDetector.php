@@ -9,7 +9,7 @@ use App\Behavioral\ChainOfResponsibilities\Handler;
 
 class RedDetector extends Handler
 {
-    protected function processing(ColorPicker $colorPicker)
+    protected function processing(ColorPicker $colorPicker): ?string
     {
         if (ColorPicker::RED === $colorPicker->getSelectedColor()) {
             return 'Red color detected!';

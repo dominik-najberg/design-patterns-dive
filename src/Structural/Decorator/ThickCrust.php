@@ -6,8 +6,8 @@ namespace App\Structural\Decorator;
 
 class ThickCrust extends PizzaDecorator
 {
-    const PRICE = 20;
-    const DESCRIPTION = ' on thick crust';
+    private const PRICE = 20;
+    private const DESCRIPTION = ' on thick crust';
 
     public function getDescription(): string
     {

@@ -7,7 +7,7 @@ abstract class AbstractState
     /** @var Door */
     protected $context;
 
-    public function setContext(Door $context)
+    public function setContext(Door $context): void
     {
         $this->context = $context;
     }

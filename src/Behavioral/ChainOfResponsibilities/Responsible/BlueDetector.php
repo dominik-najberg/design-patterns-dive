@@ -9,7 +9,7 @@ use App\Behavioral\ChainOfResponsibilities\Handler;
 
 class BlueDetector extends Handler
 {
-    protected function processing(ColorPicker $colorPicker)
+    protected function processing(ColorPicker $colorPicker): ?string
     {
         if (ColorPicker::BLUE === $colorPicker->getSelectedColor()) {
             return 'Blue color detected!';

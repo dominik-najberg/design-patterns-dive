@@ -6,7 +6,7 @@ namespace App\Behavioral\Strategy;
 
 class CalculatorStaticFactory
 {
-    static public function create(): Calculator
+    public static function create(): Calculator
     {
         $calculator = new Calculator();
         $calculator->addStrategy(new AdditionOperation());

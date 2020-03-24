@@ -6,12 +6,12 @@ namespace App\Creational\FactoryMethod;
 
 class SiameseCat implements CatInterface
 {
-    public function miaow()
+    public function miaow(): string
     {
         return 'Miaow!';
     }
 
-    public function look()
+    public function look(): string
     {
         return 'looking good';
     }

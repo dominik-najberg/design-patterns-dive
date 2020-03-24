@@ -8,7 +8,7 @@ class YoungHuman implements HumanInterface
 {
     private $age = 3;
 
-    public function sayHello()
+    public function sayHello(): string
     {
         return 'Hi. My name is Alex';
     }

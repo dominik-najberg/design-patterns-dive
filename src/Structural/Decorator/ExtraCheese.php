@@ -6,8 +6,8 @@ namespace App\Structural\Decorator;
 
 class ExtraCheese extends PizzaDecorator
 {
-    const PRICE = 10;
-    const DESCRIPTION = ' with extra cheese';
+    private const PRICE = 10;
+    private const DESCRIPTION = ' with extra cheese';
 
     public function getDescription(): string
     {

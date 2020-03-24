@@ -6,9 +6,12 @@ namespace App\Behavioral\State;
 
 class DoorClosed extends AbstractState
 {
+    /**
+     * @throws DoorException
+     */
     public function close(): void
     {
-        throw new \Exception();
+        throw new DoorException('Cannot be closed');
     }
 
     public function open(): void

@@ -8,13 +8,13 @@ class Receiver
 {
     private $output = [];
 
-    public function write($string)
+    public function write($string): void
     {
         $this->output[] = $string;
     }
 
     public function getOutput(): string
     {
-        return join("\n", $this->output);
+        return implode("\n", $this->output);
     }
 }

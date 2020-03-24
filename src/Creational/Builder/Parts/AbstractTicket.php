@@ -11,7 +11,7 @@ abstract class AbstractTicket
      */
     private $data = [];
 
-    public function setCharacteristic(string $key, Characteristic $value)
+    public function setCharacteristic(string $key, Characteristic $value): void
     {
         $this->data[$key] = $value;
     }

@@ -19,7 +19,7 @@ class HelloWorldUndoableCommand implements UndoableCommand
         $this->receiver->write('Hello World!');
     }
 
-    public function undo()
+    public function undo(): void
     {
         $this->receiver->write('No! I take that back!');
     }

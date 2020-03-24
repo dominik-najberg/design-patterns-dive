@@ -6,12 +6,12 @@ namespace App\Creational\FactoryMethod;
 
 class SphynxCat implements CatInterface
 {
-    public function miaow()
+    public function miaow(): string
     {
         return 'Squeek!';
     }
 
-    public function look()
+    public function look(): string
     {
         return 'horribly beautiful';
     }

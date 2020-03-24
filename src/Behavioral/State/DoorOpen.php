@@ -11,14 +11,20 @@ class DoorOpen extends AbstractState
         $this->context->transitionTo(new DoorClosed());
     }
 
+    /**
+     * @throws DoorException
+     */
     public function open(): void
     {
-        throw new \Exception();
+        throw new DoorException('cannot be opened');
     }
 
+    /**
+     * @throws DoorException
+     */
     public function lock(): void
     {
-        throw new \Exception();
+        throw new DoorException('cannot be locked');
     }
 
     public function isClosed(): bool
